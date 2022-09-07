@@ -1,4 +1,6 @@
 import { logo } from "../assets/images";
+import { menuItems } from "../constants/index";
+import { MenuItems } from "../components";
 
 const Navbar = () => {
   return (
@@ -18,6 +20,14 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
         </button>
+
+        <div className="navbar-collapse">
+          <ul>
+            {menuItems.map((menu, index) => (
+              <MenuItems items={menu} key={index} />
+            ))}
+          </ul>
+        </div>
       </div>
     </nav>
   );

@@ -1,4 +1,4 @@
-export const navLinks = [
+export const menuItems = [
   {
     id: "home",
     title: "Home",
@@ -14,6 +14,24 @@ export const navLinks = [
   {
     id: "pricing",
     title: "Pricing",
+  },
+  {
+    id: "drop",
+    title: "Drop",
+    submenu: [
+      {
+        url: "/article",
+        title: "Article Details",
+      },
+      {
+        url: "/terms",
+        title: "Terms",
+      },
+      {
+        url: "/privacy",
+        title: "Privacy",
+      },
+    ],
   },
 ];
 
