@@ -71,6 +71,9 @@ h6 {
   font-size: 0.875rem;
   line-height: 1.5rem;
 }
+.bg-gray {
+  background-color: #f1f9fc;
+}
 
 .container {
   margin-left: auto;

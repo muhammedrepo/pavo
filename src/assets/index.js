@@ -18,6 +18,9 @@ import testimonial6 from "./images/testimonial-6.jpg";
 import pricingBackground from "./images/pricing-background.jpg";
 import conclusionSmartphone from "./images/conclusion-smartphone.png";
 import conclusionBg from "./images/conclusion-background.jpg";
+import articleDetail from "./images/article-details-large.jpg";
+import articleDetailSmall from "./images/article-details-small.jpg";
+
 export {
   logo,
   headerSmartPhone,
@@ -39,4 +42,6 @@ export {
   pricingBackground,
   conclusionSmartphone,
   conclusionBg,
+  articleDetail,
+  articleDetailSmall,
 };
