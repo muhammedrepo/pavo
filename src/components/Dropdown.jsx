@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Wrapper } from "../assets/wrapper/DropdownStyles";
 const Dropdown = ({ submenus, dropdown }) => {
   return (
@@ -5,13 +6,13 @@ const Dropdown = ({ submenus, dropdown }) => {
       <div className={`dropdown-menu ${dropdown ? "show" : ""}`}>
         {submenus.map((submenu, index) => (
           <>
-            <a
+            <Link
               key={index}
               className="dropdown-item page-scroll"
-              href={submenu.url}
+              to={submenu.url}
             >
               {submenu.title}
-            </a>
+            </Link>
             <div className="dropdown-divider"></div>
           </>
         ))}

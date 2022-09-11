@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 const Wrapper = styled.section`
   .copyright {
@@ -29,27 +30,30 @@ const Copyright = () => {
         <div className="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
           <ul className="mb-4 list-unstyled p-small">
             <li className="mb-2">
-              <a href="article.html">Article Details</a>
+              <Link to="/article">Article Details</Link>
             </li>
             <li className="mb-2">
-              <a href="terms.html">Terms & Conditions</a>
+              <Link to="/terms">Terms & Conditions</Link>
             </li>
             <li className="mb-2">
-              <a href="privacy.html">Privacy Policy</a>
+              <Link to="/privacy">Privacy Policy</Link>
             </li>
           </ul>
           <p className="pb-2 p-small statement">
             Copyright ©{" "}
-            <a href="#your-link" className="no-underline">
+            <Link to="#your-link" className="no-underline cursor-pointer">
               Your name
-            </a>
+            </Link>
           </p>
 
           <p className="pb-2 p-small statement">
             Distributed by{" "}
-            <a href="https://coolzyte.com" className="no-underline">
+            <Link
+              to="https://coolzyte.com"
+              className="cursor-pointer no-underline"
+            >
               Muhats
-            </a>
+            </Link>
           </p>
         </div>
       </div>

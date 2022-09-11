@@ -65,18 +65,6 @@ const MenuItems = ({ items }) => {
   const onMouseEnter = () => {
     window.innerWidth > 960 && setDropdown(true);
   };
-  const onMouseLeave = () => {
-    setTimeout(
-      function () {
-        if (!dropdown) {
-          window.innerWidth > 960 && setDropdown(true);
-        } else {
-          window.innerWidth > 960 && setDropdown(false);
-        }
-      },
-      "mouseleave" ? 300 : 0
-    );
-  };
 
   const closeDropdown = () => {
     dropdown && setDropdown(false);
@@ -84,12 +72,7 @@ const MenuItems = ({ items }) => {
 
   return (
     <Wrapper>
-      <li
-        className={`dropdown `}
-        ref={ref}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-      >
+      <li className={`dropdown `} ref={ref} onMouseEnter={onMouseEnter}>
         {items.submenu ? (
           <>
             <a
